@@ -1,0 +1,3 @@
+1. Update {app-id} & {app-displayname} to your settings from the facebook app dashboard
+2. pod install
+3. Upon logging in, watch the console. You may have to kill and reopen the app because I didn't listen for login change before firing the request.
