@@ -31,7 +31,17 @@ class ViewController: UIViewController {
                     print(errorMessage)
                 }
             } else {
-                print(result)
+                if let data = result.valueForKey("data") {
+                    for event in data as! NSArray {
+                        if let place = event.valueForKey("place"), let placeName = place.valueForKey("name") {
+                            print(placeName)
+                        }
+                        
+                        if let description = event.valueForKey("description") {
+                            print(description)
+                        }
+                    }
+                }
             }
         }
     }
