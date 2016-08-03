@@ -30,16 +30,10 @@ class ViewController: UIViewController {
                 if let errorMessage = error.userInfo[FBSDKErrorDeveloperMessageKey] {
                     print(errorMessage)
                 }
-            } else {
-                if let data = result.valueForKey("data") {
-                    for event in data as! NSArray {
-                        if let place = event.valueForKey("place"), let placeName = place.valueForKey("name") {
-                            print(placeName)
-                        }
-                        
-                        if let description = event.valueForKey("description") {
-                            print(description)
-                        }
+            } else if let data = result.valueForKey("data") {
+                for event in data as! NSArray {
+                    if let place = event.valueForKey("place"), let placeName = place.valueForKey("name"), let description = event.valueForKey("description") {
+                        print(placeName, description)
                     }
                 }
             }
