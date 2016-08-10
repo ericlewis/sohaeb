@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="28" width="600" height="219"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xY9-3u-XrL" id="Z6V-Mw-JVD">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="219"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="218.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W8x-d5-H0t">
@@ -46,14 +46,30 @@
                                                 <rect key="frame" x="278" y="165" width="45" height="21"/>
                                             </variation>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcN-Pm-MfD" userLabel="Start Time">
+                                            <rect key="frame" x="61" y="151" width="75.5" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="He8-4n-Al6" userLabel="End Time">
+                                            <rect key="frame" x="61" y="180" width="72" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="He8-4n-Al6" firstAttribute="leading" secondItem="gC6-EQ-bQF" secondAttribute="trailing" constant="11" id="FdT-P5-sq1"/>
+                                        <constraint firstItem="WcN-Pm-MfD" firstAttribute="top" secondItem="W8x-d5-H0t" secondAttribute="bottom" constant="23" id="MYm-ba-n3f"/>
                                         <constraint firstItem="JJB-9n-qMU" firstAttribute="leading" secondItem="Z6V-Mw-JVD" secondAttribute="leadingMargin" id="V5M-hJ-szx"/>
                                         <constraint firstItem="JJB-9n-qMU" firstAttribute="top" secondItem="W8x-d5-H0t" secondAttribute="bottom" constant="23" id="W8V-Ys-0iS"/>
                                         <constraint firstItem="W8x-d5-H0t" firstAttribute="leading" secondItem="Z6V-Mw-JVD" secondAttribute="leading" id="bZS-d1-Rr1"/>
+                                        <constraint firstItem="He8-4n-Al6" firstAttribute="top" secondItem="WcN-Pm-MfD" secondAttribute="bottom" constant="8" id="imD-Jg-IwU"/>
                                         <constraint firstItem="W8x-d5-H0t" firstAttribute="top" secondItem="Z6V-Mw-JVD" secondAttribute="top" id="lg3-6r-rm8"/>
                                         <constraint firstItem="gC6-EQ-bQF" firstAttribute="top" secondItem="JJB-9n-qMU" secondAttribute="bottom" constant="8" id="n1A-S2-GyL"/>
                                         <constraint firstAttribute="leadingMargin" secondItem="gC6-EQ-bQF" secondAttribute="leading" id="qgT-69-ZDH"/>
+                                        <constraint firstItem="WcN-Pm-MfD" firstAttribute="leading" secondItem="JJB-9n-qMU" secondAttribute="trailing" constant="8" id="zMU-8m-xAf"/>
                                         <constraint firstAttribute="trailing" secondItem="W8x-d5-H0t" secondAttribute="trailing" id="zUm-cp-fZa"/>
                                     </constraints>
                                 </tableViewCellContentView>
