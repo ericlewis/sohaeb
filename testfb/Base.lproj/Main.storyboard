@@ -54,26 +54,74 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="End Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="He8-4n-Al6" userLabel="End Time">
                                             <rect key="frame" x="263" y="180" width="72" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="72" id="Njk-im-38j"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Njk-im-38j"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="Njk-im-38j"/>
+                                                </mask>
+                                            </variation>
                                         </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="WcN-Pm-MfD" firstAttribute="leading" secondItem="Z6V-Mw-JVD" secondAttribute="leading" constant="263" id="2Fs-9e-byp"/>
+                                        <constraint firstItem="He8-4n-Al6" firstAttribute="baseline" secondItem="gC6-EQ-bQF" secondAttribute="baseline" id="2K9-0z-LTj"/>
                                         <constraint firstItem="JJB-9n-qMU" firstAttribute="baseline" secondItem="WcN-Pm-MfD" secondAttribute="baseline" id="6iA-6O-Add"/>
                                         <constraint firstItem="WcN-Pm-MfD" firstAttribute="leading" secondItem="JJB-9n-qMU" secondAttribute="trailing" constant="8" symbolic="YES" id="79F-V5-Jsl"/>
                                         <constraint firstItem="gC6-EQ-bQF" firstAttribute="leading" secondItem="Z6V-Mw-JVD" secondAttribute="leadingMargin" id="CzQ-BT-pJq"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="WcN-Pm-MfD" secondAttribute="trailing" constant="91" id="ESG-6k-3rU"/>
+                                        <constraint firstItem="He8-4n-Al6" firstAttribute="leading" secondItem="gC6-EQ-bQF" secondAttribute="trailing" constant="10" id="PQk-cT-0tM"/>
                                         <constraint firstItem="gC6-EQ-bQF" firstAttribute="baseline" secondItem="He8-4n-Al6" secondAttribute="baseline" id="Pai-tA-XNl"/>
                                         <constraint firstItem="He8-4n-Al6" firstAttribute="leading" secondItem="gC6-EQ-bQF" secondAttribute="trailing" constant="8" symbolic="YES" id="Q85-f9-w06"/>
+                                        <constraint firstItem="WcN-Pm-MfD" firstAttribute="centerX" secondItem="He8-4n-Al6" secondAttribute="centerX" id="Qxu-yz-chF"/>
+                                        <constraint firstItem="WcN-Pm-MfD" firstAttribute="leading" secondItem="JJB-9n-qMU" secondAttribute="trailing" constant="8" symbolic="YES" id="TOq-yS-mdj"/>
                                         <constraint firstItem="He8-4n-Al6" firstAttribute="top" secondItem="JJB-9n-qMU" secondAttribute="bottom" constant="8" symbolic="YES" id="Ufg-eL-9WF"/>
                                         <constraint firstItem="W8x-d5-H0t" firstAttribute="leading" secondItem="Z6V-Mw-JVD" secondAttribute="leading" id="bZS-d1-Rr1"/>
                                         <constraint firstItem="JJB-9n-qMU" firstAttribute="top" secondItem="W8x-d5-H0t" secondAttribute="bottom" constant="23" id="gG2-IJ-xbs"/>
                                         <constraint firstItem="gC6-EQ-bQF" firstAttribute="trailing" secondItem="JJB-9n-qMU" secondAttribute="trailing" id="hmu-ch-ZAM"/>
+                                        <constraint firstItem="He8-4n-Al6" firstAttribute="top" secondItem="WcN-Pm-MfD" secondAttribute="bottom" constant="8" symbolic="YES" id="ke0-P0-qVa"/>
                                         <constraint firstItem="W8x-d5-H0t" firstAttribute="top" secondItem="Z6V-Mw-JVD" secondAttribute="top" id="lg3-6r-rm8"/>
                                         <constraint firstItem="gC6-EQ-bQF" firstAttribute="leading" secondItem="JJB-9n-qMU" secondAttribute="leading" id="ujz-8r-skO"/>
                                         <constraint firstAttribute="trailing" secondItem="W8x-d5-H0t" secondAttribute="trailing" id="zUm-cp-fZa"/>
+                                        <constraint firstItem="WcN-Pm-MfD" firstAttribute="baseline" secondItem="JJB-9n-qMU" secondAttribute="baseline" id="zXz-Aj-hWC"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="ESG-6k-3rU"/>
+                                            <exclude reference="Qxu-yz-chF"/>
+                                            <exclude reference="TOq-yS-mdj"/>
+                                            <exclude reference="zXz-Aj-hWC"/>
+                                            <exclude reference="2K9-0z-LTj"/>
+                                            <exclude reference="PQk-cT-0tM"/>
+                                            <exclude reference="ke0-P0-qVa"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=compact">
+                                        <mask key="constraints">
+                                            <exclude reference="6iA-6O-Add"/>
+                                            <exclude reference="Pai-tA-XNl"/>
+                                            <exclude reference="2Fs-9e-byp"/>
+                                            <exclude reference="79F-V5-Jsl"/>
+                                            <include reference="ESG-6k-3rU"/>
+                                            <include reference="Qxu-yz-chF"/>
+                                            <include reference="TOq-yS-mdj"/>
+                                            <include reference="zXz-Aj-hWC"/>
+                                            <include reference="2K9-0z-LTj"/>
+                                            <include reference="PQk-cT-0tM"/>
+                                            <exclude reference="Q85-f9-w06"/>
+                                            <exclude reference="Ufg-eL-9WF"/>
+                                            <include reference="ke0-P0-qVa"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="imageLol" destination="W8x-d5-H0t" id="ffS-aU-vZu"/>
