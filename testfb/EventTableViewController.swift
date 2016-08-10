@@ -57,6 +57,8 @@ class EventTableViewController: UITableViewController {
                         self.event123.append(Event(newName: placeName as! String, newImage: UIImage(data: data)!))
                     }
                 }
+                
+                self.tableView.reloadData()
             }
         }
     }
